@@ -67,7 +67,7 @@
         report.signalInfo.code, report.signalInfo.address);
   
   NSString *text = [PLCrashReportTextFormatter stringValueForCrashReport: report withTextFormat: PLCrashReportTextFormatiOS];
-  NSLog(text);
+  NSLog(@"%@", text);
   
   // Purge the report
   [crashReporter purgePendingCrashReport];

@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF46FCC525418E2700146713 /* CrashReporter in Frameworks */ = {isa = PBXBuildFile; productRef = DF46FCC425418E2700146713 /* CrashReporter */; };
+		DFBAB1832542C847009D2263 /* MSCrashSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBAB1822542C847009D2263 /* MSCrashSwift.swift */; };
 		DFD7FDC4253D9FDF002CA8F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD7FDC3253D9FDF002CA8F8 /* AppDelegate.m */; };
 		DFD7FDC7253D9FDF002CA8F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD7FDC6253D9FDF002CA8F8 /* ViewController.m */; };
 		DFD7FDC9253D9FE2002CA8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD7FDC8253D9FE2002CA8F8 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DFBAB1812542C846009D2263 /* PlcrMacosUniversal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlcrMacosUniversal-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFBAB1822542C847009D2263 /* MSCrashSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSCrashSwift.swift; sourceTree = "<group>"; };
 		DFD7FDBF253D9FDF002CA8F8 /* PlcrMacosUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlcrMacosUniversal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD7FDC2253D9FDF002CA8F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFD7FDC3253D9FDF002CA8F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,7 +100,6 @@
 		DFD7FEE5253DFBD9002CA8F8 /* MSCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrash.m; sourceTree = "<group>"; };
 		DFD7FEE6253DFBD9002CA8F8 /* MSCrashAbort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashAbort.h; sourceTree = "<group>"; };
 		DFD7FEE7253DFBD9002CA8F8 /* MSCrashROPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashROPage.m; sourceTree = "<group>"; };
-		DFD7FEE8253DFBD9002CA8F8 /* CrashLib-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CrashLib-Bridging-Header.h"; sourceTree = "<group>"; };
 		DFD7FEE9253DFBD9002CA8F8 /* MSCrashNXPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashNXPage.h; sourceTree = "<group>"; };
 		DFD7FEEA253DFBD9002CA8F8 /* MSCrashSmashStackTop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashSmashStackTop.m; sourceTree = "<group>"; };
 		DFD7FEEB253DFBD9002CA8F8 /* MSCrashObjCException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashObjCException.m; sourceTree = "<group>"; };
@@ -123,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF46FCC525418E2700146713 /* CrashReporter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +171,7 @@
 		DFD7FEC0253DFBD9002CA8F8 /* CrashLib */ = {
 			isa = PBXGroup;
 			children = (
+				DFBAB1822542C847009D2263 /* MSCrashSwift.swift */,
 				DFD7FEC1253DFBD9002CA8F8 /* MSCrashCustomView.m */,
 				DFD7FEC2253DFBD9002CA8F8 /* MSCrashUndefInst.m */,
 				DFD7FEC3253DFBD9002CA8F8 /* MSCrashPrivInst.h */,
@@ -205,7 +210,6 @@
 				DFD7FEE5253DFBD9002CA8F8 /* MSCrash.m */,
 				DFD7FEE6253DFBD9002CA8F8 /* MSCrashAbort.h */,
 				DFD7FEE7253DFBD9002CA8F8 /* MSCrashROPage.m */,
-				DFD7FEE8253DFBD9002CA8F8 /* CrashLib-Bridging-Header.h */,
 				DFD7FEE9253DFBD9002CA8F8 /* MSCrashNXPage.h */,
 				DFD7FEEA253DFBD9002CA8F8 /* MSCrashSmashStackTop.m */,
 				DFD7FEEB253DFBD9002CA8F8 /* MSCrashObjCException.m */,
@@ -225,6 +229,7 @@
 				DFD7FEFA253DFBD9002CA8F8 /* MSCrashCXXCustomException.mm */,
 				DFD7FEFB253DFBD9002CA8F8 /* MSCrashOutOfMemory.mm */,
 				DFD7FEFC253DFBD9002CA8F8 /* MSCrashOverwriteLinkRegister.h */,
+				DFBAB1812542C846009D2263 /* PlcrMacosUniversal-Bridging-Header.h */,
 			);
 			path = CrashLib;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			);
 			name = PlcrMacosUniversal;
 			packageProductDependencies = (
+				DF46FCC425418E2700146713 /* CrashReporter */,
 			);
 			productName = PlcrMacosUniversal;
 			productReference = DFD7FDBF253D9FDF002CA8F8 /* PlcrMacosUniversal.app */;
@@ -261,6 +267,7 @@
 				TargetAttributes = {
 					DFD7FDBE253D9FDF002CA8F8 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -274,6 +281,7 @@
 			);
 			mainGroup = DFD7FDB6253D9FDF002CA8F8;
 			packageReferences = (
+				DF46FCC325418E2700146713 /* XCRemoteSwiftPackageReference "plcrashreporter" */,
 			);
 			productRefGroup = DFD7FDC0253D9FDF002CA8F8 /* Products */;
 			projectDirPath = "";
@@ -316,6 +324,7 @@
 				DFD7FF19253DFBDA002CA8F8 /* MSFramelessDWARF_x86_64.s in Sources */,
 				DFD7FF10253DFBDA002CA8F8 /* MSCrashObjCException.m in Sources */,
 				DFD7FF1B253DFBDA002CA8F8 /* MSCrashCXXCustomException.mm in Sources */,
+				DFBAB1832542C847009D2263 /* MSCrashSwift.swift in Sources */,
 				DFD7FDC7253D9FDF002CA8F8 /* ViewController.m in Sources */,
 				DFD7FEFF253DFBD9002CA8F8 /* MSCrashCorruptMalloc.m in Sources */,
 				DFD7FDCF253D9FE2002CA8F8 /* main.m in Sources */,
@@ -468,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = PlcrMacosUniversal/PlcrMacosUniversal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -479,6 +489,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.plcr.macos.universal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlcrMacosUniversal/CrashLib/PlcrMacosUniversal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -487,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = PlcrMacosUniversal/PlcrMacosUniversal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -498,6 +512,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.plcr.macos.universal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlcrMacosUniversal/CrashLib/PlcrMacosUniversal-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -523,6 +539,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF46FCC325418E2700146713 /* XCRemoteSwiftPackageReference "plcrashreporter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/plcrashreporter";
+			requirement = {
+				branch = "v-ivmatk/apple-silicon-ci";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF46FCC425418E2700146713 /* CrashReporter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF46FCC325418E2700146713 /* XCRemoteSwiftPackageReference "plcrashreporter" */;
+			productName = CrashReporter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DFD7FDB7253D9FDF002CA8F8 /* Project object */;
 }

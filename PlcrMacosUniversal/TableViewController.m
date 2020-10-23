@@ -60,10 +60,12 @@
 }
 
 - (BOOL)tableView:(NSTableView *)tableView shouldSelectRow:(NSInteger)row {
-  NSLog(@"We're going to crash with %@", [[self.crashes objectAtIndex:row] title]);
-  dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
-    [[self.crashes objectAtIndex:row] crash];
-  });
+  MSCrash *clickedCrash = [self.crashes objectAtIndex:row];
+  NSLog(@"We're going to crash with %@, %@", [clickedCrash className], [clickedCrash title]);
+  [[self.crashes objectAtIndex:row] crash];
+//  dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+//    [[self.crashes objectAtIndex:row] crash];
+//  });
   return YES;
 }
 

@@ -39,6 +39,8 @@
     NSLog(@"Crash reporter started");
   }
   
+  // Enable catching uncaught exceptions thrown on the main thread.
+  [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"NSApplicationCrashOnExceptions" : @YES}];
 }
 
 //
